@@ -7,12 +7,11 @@ public class App {
 	// utilizando la sentencia if y Pattern Maching con el metodo instanceof y
 	// ademas destructure del tipo record que es uno de los record patterns
 	static void impremeDetalles(Object obj) {
-		// ¿como seria en versiones anteriores de java 21 donde no existia record
-		// patterns?
+		//en java 21 CON record pattern, especialmente con destructure
 
-		if (obj instanceof Book book) {
-			System.out.println("titulo del libro: " + book.title());
-			System.out.println("Autor del libro: " + book.author());
+		if (obj instanceof Book (String titulo, String autor)) {
+			System.out.println("titulo del libro: " + titulo);
+			System.out.println("Autor del libro: " + autor);
 		}
 	}
 
