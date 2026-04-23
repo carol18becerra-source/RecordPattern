@@ -1,6 +1,5 @@
 package com.example;
 
-import lombok.experimental.var;
 
 public class App {
 
@@ -40,10 +39,11 @@ public class App {
 						.build()
 				)
 				.build();
-		if (library instanceof Library(var nombre, Book(var titulo, var autor))) {
+		
+		if (library instanceof Library(var nombre, Book(var titulo, var autor))) 
 			System.out.println("en la biblioteca: " + nombre + ", el bestseller es: " + titulo + 
 				", por el autor: " + autor);
-		}
+		
 				
 		
 		
